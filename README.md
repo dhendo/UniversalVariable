@@ -196,8 +196,8 @@ There are many possible types of product on the Web - here, we first list proper
 <tr><td>Product Price</td><td>unit_sale_price</td><td>Number</td><td>The price for a single unit of this product actually paid by a customer, taking into account any sales and promotions. <b>Note:</b> If a promotion involves selling the same product with different prices in the same transaction (e.g. ten units of a product are in a basket, where the first two receive a 10% discount, and the rest are discounted by 20%), implement the 'least discounted' version of the product using this Product object, and implement the further discount by using the `total_discount` property of the <a href="#lineitem">LineItem</a> object, which forms part of <a href="#basket">Baskets</a> and <a href="#transaction">Transactions</a>.<i>Requires Product Currency to be declared.</i></td></tr>
 <tr><td>Product Price Excluding Promotions</td><td>unit_price</td><td>Number</td><td>The price of a single unit of this product, not taking into account discounts and promotions.  <i>Requires Product Currency and Product Price to be declared.</i></td></tr>
 <tr><td>Product Reviews</td><td>reviews</td><td>Array of <a href="#review">Review</a> objects</td><td>Reviews that have been written (by customers or staff) about this Product.</td></tr>
-<tr><td>Product Image</td><td>image</td><td>URL of a regular size image for this product.</td></tr>
-<tr><td>Product Thumbnail Image</td><td>thumbnail</td><td>URL of a small sized image for this product.</td></tr>
+<tr><td>Product Image</td><td>image</td><td>String</td><td>URL of a regular size image for this product.</td></tr>
+<tr><td>Product Thumbnail Image</td><td>thumbnail</td><td>String</td><td>URL of a small sized image for this product.</td></tr>
 </table>
 
 ### Additional properties for products requiring stock keeping
